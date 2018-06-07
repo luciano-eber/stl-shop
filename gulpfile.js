@@ -38,7 +38,7 @@ gulp.task('build-img', function() {
 gulp.task('sass', function(){
     return gulp.src('source/sass/**/*')
     .pipe(sass())
-    .pipe(gulp.dest('source/css'));
+    .pipe(gulp.dest('source/css/styles'));
 });
 
 gulp.task('usemin', function() {
@@ -54,7 +54,7 @@ gulp.task('usemin', function() {
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: 'dist'
+            baseDir: 'source'
         }
     });
 
@@ -67,7 +67,7 @@ gulp.task('server', function() {
             .pipe(jshint.reporter(jshintStylish));
     });
 
-    gulp.watch('source/css/**/*.css').on('change', function(event) {
+    gulp.watch('source/css/styles/**/*.css').on('change', function(event) {
         console.log("Linting " + event.path);
         gulp.src(event.path)
             .pipe(csslint())
@@ -80,6 +80,6 @@ gulp.task('server', function() {
                console.log('SASS, erro compilação: ' + erro.filename);
                console.log(erro.message);
              }))
-             .pipe(gulp.dest('source/css'));
+             .pipe(gulp.dest('source/css/styles'));
     });   
 });
