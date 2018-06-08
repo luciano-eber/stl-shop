@@ -1,0 +1,6 @@
+# Dev dependecies #
+###################
+*node_modules
+*package.json
+*package-lock.json
+*vs-file.code-workspace
