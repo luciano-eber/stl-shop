@@ -4,7 +4,8 @@ $(document).ready(function() {
     }, {
        // configuration
        offCanvas: {
-          pageSelector: "#my-wrapper"
+          pageSelector: "#page"
        }
     });
+
 });
