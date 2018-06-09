@@ -1,12 +1,19 @@
 @import '../sets.scss';
 .topbar{
-    position: relative;
+
+    background: $white;
     //canto-direito (open mmenu)
     .corner-left{
         height: 100%;
         left: 0;
-        min-width: 5rem;
+        min-width: 10%;
         margin-right: 1rem;
+        .open-menu{
+            $w: 100%;
+            width: $w;
+            height: $w;
+            font-size: 150%;
+        }
     }
 
     //logo
