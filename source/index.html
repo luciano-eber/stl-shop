@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Steal the Look | Shop</title>
 		<link href="https://fonts.googleapis.com/css?family=Oswald:100,300,400,600" rel="stylesheet" type="text/css">
 	<!-- build:css css/index.min.css -->
@@ -37,7 +37,7 @@
 
 			<div class="corner-left center-start-s">
 				<!-- abrir menu mobile -->
-				<a class="open-menu center-center-s" id="my-button" href="#my-menu">
+				<a class="open-menu center-start-s" id="my-button" href="#my-menu">
 					<i class="fa fa-bars"></i>
 				</a>
 			</div>
@@ -71,24 +71,60 @@
 	<div class="m-page-wrap" id="my-page">
 
 		<!-- conteúdo da página abaixo da topbar -->
-		<div class="main-content-wrap section center-center-s" id="my-content">
-			<!-- Swiper -->
+		<div class="main-content-wrap section flex-col-s center-center-s" id="my-content">
+
+			<!-- Slider-main -->
 			<div class="swiper-container slider-main row">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">Slide 1</div>
-					<div class="swiper-slide">Slide 2</div>
-					<div class="swiper-slide">Slide 3</div>
-					<div class="swiper-slide">Slide 4</div>
-					<div class="swiper-slide">Slide 5</div>
-					<div class="swiper-slide">Slide 6</div>
-					<div class="swiper-slide">Slide 7</div>
-					<div class="swiper-slide">Slide 8</div>
-					<div class="swiper-slide">Slide 9</div>
-					<div class="swiper-slide">Slide 10</div>
+					<div class="swiper-slide">
+						<img class="slider-main-img" src="img/courtney-would-love.jpg" alt="new-courtney-would-love">
+					</div>
+					<div class="swiper-slide">
+						<img class="slider-main-img" src="img/chic-curinga.jpg" alt="chic-curinga">
+					</div>
+					<div class="swiper-slide">
+						<img class="slider-main-img" src="img/silver-lake-vibes.jpg" alt="new-silver-lake-vibes">
+					</div>
 				</div>
 				<div class="swiper-button-next"></div>
     			<div class="swiper-button-prev"></div>
 			</div>
+
+			<!-- destaques da semana -->
+			<section class="panel section center-center-s">
+				<div class="row center-center-s flex-col-s">
+					<!-- titulo painel -->
+					<header class="panel-header ">
+						<h2 class="panel-title text-center-s">
+							Destaques da semana
+						</h2>
+						<p class="panel-sub-title text-center-s">
+							As marcas que estão na wish list das nossas editoras essa semana.
+						</p>
+					</header>
+
+					<!-- corpo painel -->
+					<div class="panel-body">
+						<ul class="destaques-list flex flex-col-s">
+							<li class="destaque">
+								<a class="destaque-a">
+									<img class="destaque-img" src="img/destaques/cobé.jpg">
+								</a>
+							</li>
+							<li class="destaque">
+								<a class="destaque-a">
+									<img class="destaque-img" src="img/destaques/curated-by-love.jpg">
+								</a>
+							</li>
+							<li class="destaque">
+								<a class="destaque-a">
+									<img class="destaque-img" src="img/destaques/mos.jpg">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 		</div>
 
 	</div>	
@@ -102,8 +138,8 @@
 <!-- endbuild -->
 
 <!-- build:js js/index.min.js -->
-<script src="js/index.js"></script>
 <script src="js/config/mmenu.js"></script>
+<script src="js/index.js"></script>
 <!-- endbuild -->
 
   </body>

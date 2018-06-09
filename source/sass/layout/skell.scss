@@ -1,25 +1,20 @@
 @import '../sets.scss';
-//seção - container e filho
+
+.flex{
+    display: flex;
+}
 .section{
     width: 100%;
 }
 .row{
-    width: 92%;
-    height: 100%;
     display: inline-flex;
     flex-flow: row nowrap;
-    @media(min-width: $break-1){
-        width: 95%;
-    }
-    @media(min-width: $break-2){
-        width: 88%;
-    }
-    @media(min-width: $break-4){
-        width: 73.55%;
-    }
+    @include margin-main;
 }
-
-//mmenu topo do layout scheme
+.panel{
+    margin-top: 3.25rem;
+}
+//mmenu topo scheme
 .topbar{
     position: fixed;
     height: $topbarH;
@@ -27,10 +22,10 @@
 }
 .m-page-wrap{
     position: relative;
+    top: $topbarH;
 }
 .main-content-wrap{
-    top: $topbarH;
-    min-height: 50vh;
+    position: relative;
 }
 .m-menu-wrap{
     top: $topbarH;

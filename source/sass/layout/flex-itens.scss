@@ -1,0 +1,46 @@
+@import '../sets.scss';
+
+//text-aligns
+$text-aligns: (
+    center,
+    left,
+    right
+);
+
+//export mixin
+@mixin flexItem($size){
+    
+    $z-layers: 10;
+    
+    //z-index
+    @for $i from 1 through $z-layers{
+
+        $z: 1000 - $i;
+
+        .z-index-#{$i}-#{$size}{
+            z-index: $z;
+        }
+    }
+    //hider
+    .hider-#{$size}{
+        display: none;
+    }
+    //show
+    .show-#{$size}{
+        display: flex;
+    }
+    //opacity invisible
+    .opac-#{$size}{
+        opacity: 0;
+    }
+    //fade-in opacity
+    .fade-in-#{$size}{
+        opacity: 1;
+    }
+    //text-align
+    @each $align in $text-aligns{
+        .text-#{$align}-#{$size}{
+            text-align: $align;
+        }
+    }
+}

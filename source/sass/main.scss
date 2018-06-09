@@ -5,8 +5,12 @@
 //layout
 @import 'layout/skell.scss';
 @import 'layout/align.scss';
+@import 'layout/flow.scss';
+@import 'layout/flex-itens.scss';
+//blocos da estrutura
 @import 'layout/topbar.scss';
 @import 'layout/slider-main.scss';
+@import 'layout/panels-main/destaques.scss';
 //componentes
 @import 'componentes/buttons.scss';
 @import 'componentes/texts.scss';
@@ -24,12 +28,16 @@ body{
     font-size: 100%;
 }
 
-//invocar aqui caso precise de outros loops para outras funções do layout
-@mixin call($size){
+//lógica de classes flexbox reaproveitáveis e responsivas utilizadas no html:
+
+//invocar aqui mixins que são importados de seus respectivos módulos
+@mixin call($size){ //chamada única
     @include align($size);
+    @include flow($size);
+    @include flexItem($size);
 }
 
-//RWD align
+//RWD schema
 @each $size, $bk in $sizes{
     
     $bkp: map-get($bk, break);
@@ -40,7 +48,7 @@ body{
         // MIN-WIDTH E MAX-WIDTH
         @media(min-width: $bkp) and (max-width: $maxW) {
 
-            //invocando align responsivo
+            //rwd - sizes
             @include call($size);
         }
     }
@@ -49,7 +57,7 @@ body{
         // APENAS MIN-WIDTH
         @media(min-width: $bkp){
             
-            //invocando align responsivo
+            //rwd
             @include call($size);
         }
     }
