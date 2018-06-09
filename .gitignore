@@ -1,5 +1,7 @@
 # Dev dependecies #
 ###################
 *node_modules
+*config.rb
+*.sass-cache
 *package-lock.json
 *vs-file.code-workspace
