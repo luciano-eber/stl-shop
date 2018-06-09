@@ -6,8 +6,8 @@ var swiper = new Swiper('.slider-main', {
       prevEl: '.swiper-button-prev',
     },
     autoplay: {
-      delay: 500,
-      disableOnInteraction: false,
+      delay: 4500,
+      disableOnInteraction: true,
     },
     loop: true,
 });

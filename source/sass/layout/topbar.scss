@@ -2,6 +2,9 @@
 .topbar{
 
     background: $white;
+    .row{
+        height: 100%;
+    }
     //canto-direito (open mmenu)
     .corner-left{
         height: 100%;
@@ -70,6 +73,7 @@
             .logo-full{
                 display: flex;
                 width: 100%;
+                max-width: 19.9375rem;
             }
         }
 

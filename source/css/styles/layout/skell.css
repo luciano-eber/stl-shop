@@ -1,0 +1,51 @@
+.flex {
+  display: flex;
+}
+
+.section {
+  width: 100%;
+}
+
+.row {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  width: 92%;
+}
+@media (min-width: 769px) {
+  .row {
+    width: 95%;
+  }
+}
+@media (min-width: 1200px) {
+  .row {
+    width: 85.55%;
+  }
+}
+@media (min-width: 1600px) {
+  .row {
+    width: 73.55%;
+  }
+}
+
+.panel {
+  margin-top: 3.25rem;
+}
+
+.topbar {
+  position: fixed;
+  height: 65px;
+  width: 100%;
+}
+
+.m-page-wrap {
+  position: relative;
+  top: 65px;
+}
+
+.main-content-wrap {
+  position: relative;
+}
+
+.m-menu-wrap {
+  top: 65px;
+}

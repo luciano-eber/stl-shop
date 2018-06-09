@@ -9,7 +9,7 @@ $topbarH: 65px;
 //margin lateral do container(row) de acordo com breakpoint
 $margin-m-start: 92%;
 $margin-m-1: 95%;
-$margin-m-3: 88.55%;
+$margin-m-3: 85.55%;
 $margin-m-4: 73.55%;
 
 @mixin margin-main{
@@ -29,7 +29,7 @@ $margin-m-4: 73.55%;
 //breakpoints do layout
 $startMedia: 280px;
 $break-1: 769px;
-$break-2: 1024px;
+$break-2: 992px;
 $break-3: 1200px;
 $break-4: 1600px;
 
