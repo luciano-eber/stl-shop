@@ -1,0 +1,61 @@
+//Alinhamento e Distribuição
+
+// alinhamentos das colunas (align-items)
+$aligns: (
+	center: center,
+	start: flex-start,
+    end: flex-end,
+    stretch: stretch,
+    baseline: baseline
+);
+
+// justifys (justify-content)
+$justifys: (
+    between : space-between,
+    start : flex-start,
+    center : center,
+    end : flex-end,
+    around: space-around
+);
+
+//align-content
+$contents: (
+    stretch: stretch,
+    between : space-between,
+    start : flex-start,
+    center : center,
+    end : flex-end,
+    around: space-around
+);
+
+//vai ser utilizado no arquivo principal
+//para gerar classes de acordo com o layout
+
+@mixin align($size){
+
+    //align-items e justify-content
+    @each $align, $a in $aligns{
+
+        //justifys
+        @each $justify, $s in $justifys{
+            
+            $justify-format: $s;
+            $align-format: $a;    
+            
+            //alinhamento-justify 
+            .#{$align}-#{$justify}-#{$size}{
+                display: flex;
+                align-items: $align-format;
+                justify-content: $justify-format;
+            }
+        }        
+    }
+
+    //align-content (alinhamento de linhas em container com overflow wrap)
+    // @each $content, $c in $contents{
+    //     .content-#{$content}-#{$size}{
+    //         align-content: $c;
+    //     }
+    // }
+
+}

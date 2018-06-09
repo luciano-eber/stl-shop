@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-	<title>Steal the Look | Shop</title>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:100,300,400,600" rel="stylesheet" type="text/css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Steal the Look | Shop</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald:100,300,400,600" rel="stylesheet" type="text/css">
 	<!-- build:css css/index.min.css -->
 	<link href="css/fonts/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="css/fonts/buyshop.css" rel="stylesheet" type="text/css">
@@ -12,30 +12,13 @@
     <link href="css/js-libs/mmenu.css" rel="stylesheet" type="text/css">
     <link href="css/styles/main.css" rel="stylesheet" type="text/css">
     <!-- endbuild -->
-  </head>
+</head>
 <body>
 
-<div class="topbar">
-	<a id="my-button" href="#my-menu">Open the menu</a>
-</div>
-
-<!-- wrap para -->
-<div class="m-page-wrap" id="my-page">
-
-<div class="main-content-wrap" id="my-content">
-	teste<br>
-	teste<br>
-	teste<br>
-	testei<br>
-</div>
-
-<div id="my-footer"></div>
-
-</div>	
-
-<nav class="m-menu-wrap" id="my-menu">
-	<ul>
-		<li><a href="/">Home</a></li>
+	<!-- menu principal -->
+	<nav class="m-menu-wrap" id="my-menu">
+		<ul>
+			<li><a href="/">Home</a></li>
 			<li><a href="/about/">About us</a>
 				<ul>
 					<li><a href="/about/history/">History</a></li>
@@ -43,10 +26,72 @@
 					<li><a href="/about/address/">Our address</a></li>
 				</ul>
 			</li>
-		<li><a href="/contact/">Contact</a></li>
-	</ul>
- </nav>	
+			<li><a href="/contact/">Contact</a></li>
+		</ul>
+	</nav>	
+	
+	<!-- topbar -->
+	<div class="topbar section center-center-s">
 
+		<div class="row center-between-s">
+
+			<div class="corner-left center-start-s">
+				<!-- abrir menu mobile -->
+				<a class="open-menu center-center-s" id="my-button" href="#my-menu">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+			
+			<!-- logo -->
+			<div class="logo-wrap center-center-s center-start-m">
+				<img class="logo-mobile" src="img/logo-mobile.png">
+				<img class="logo-full" src="img/logo-stl-shop.png">
+			</div>
+		
+			<!-- user -->
+			<ul class="user-menu center-around-s">
+				<li class="user-item">
+					<i class="icon-user"></i>
+				</li>
+				<li class="user-item">
+					<i class="icon-search"></i>
+				</li>
+				<li class="user-item icon-bag-topbar">
+					<i class="icon-bag2"></i>
+					<div class="badge center-center-s number">
+						<span class="count">0</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+
+	<!-- wrap page do mmenu-->
+	<div class="m-page-wrap" id="my-page">
+
+		<!-- conteúdo da página abaixo da topbar -->
+		<div class="main-content-wrap section center-center-s" id="my-content">
+			<!-- Swiper -->
+			<div class="swiper-container slider-main row">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+					<div class="swiper-slide">Slide 5</div>
+					<div class="swiper-slide">Slide 6</div>
+					<div class="swiper-slide">Slide 7</div>
+					<div class="swiper-slide">Slide 8</div>
+					<div class="swiper-slide">Slide 9</div>
+					<div class="swiper-slide">Slide 10</div>
+				</div>
+				<div class="swiper-button-next"></div>
+    			<div class="swiper-button-prev"></div>
+			</div>
+		</div>
+
+	</div>	
 
 </body>
 
@@ -58,7 +103,7 @@
 
 <!-- build:js js/index.min.js -->
 <script src="js/index.js"></script>
-<script src="js/config/mmenu.config.js"></script>
+<script src="js/config/mmenu.js"></script>
 <!-- endbuild -->
 
   </body>

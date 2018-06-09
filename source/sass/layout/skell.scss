@@ -1,0 +1,37 @@
+@import '../sets.scss';
+//seção - container e filho
+.section{
+    width: 100%;
+}
+.row{
+    width: 92%;
+    height: 100%;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    @media(min-width: $break-1){
+        width: 95%;
+    }
+    @media(min-width: $break-2){
+        width: 88%;
+    }
+    @media(min-width: $break-4){
+        width: 73.55%;
+    }
+}
+
+//mmenu topo do layout scheme
+.topbar{
+    position: fixed;
+    height: $topbarH;
+    width: 100%;
+}
+.m-page-wrap{
+    position: relative;
+}
+.main-content-wrap{
+    top: $topbarH;
+    min-height: 50vh;
+}
+.m-menu-wrap{
+    top: $topbarH;
+}

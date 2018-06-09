@@ -1,0 +1,19 @@
+@import '../sets.scss';
+.badge{
+    font-size: 60%;
+    font-weight: bold;
+    background-color: $pink;
+    color: $white;
+    border-radius: 50%;
+    $w: 1.3rem;
+    width: $w;
+    height: $w;
+    position: relative;
+    .count{
+        position: relative;
+        top: -1px;
+        @media(min-width: $break-3){
+            top: 0;
+        }
+    }
+}

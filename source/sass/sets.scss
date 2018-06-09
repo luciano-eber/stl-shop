@@ -1,0 +1,44 @@
+//colors
+$pink: #fb377f;
+$dark: #000;
+$white: #fff;
+
+//topbar altura
+$topbarH: 65px;
+
+//breakpoints layout (principais da infraestrutura)
+$startMedia: 200px;
+$break-1: 769px;
+$break-2: 1024px;
+$break-3: 1100px;
+$break-4: 1200px;
+$break-5: 1600px;
+
+//tamanhos (breakpoints principais) map structure para gerar o nome das classes reaproveitaveis
+$sizes:(
+    s:(
+        break: $startMedia
+    ),
+    sm: (
+        break: $startMedia,
+        max: ($break-1 - 1),
+        brow: m
+    ),
+    m:(
+        break: $break-1
+    ),
+    mg: (
+        break: $break-1,
+        max: ($break-2 - 1),
+        brow: g
+    ),
+    g: (
+        break: $break-2,
+    ),
+    gg: (
+        break: $break-3,
+    ),
+    eg: (
+        break: $break-4,
+    )
+);

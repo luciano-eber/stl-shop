@@ -1,3 +1,17 @@
+
+//configs
+@import 'reset.scss';
+@import 'sets.scss';
+//layout
+@import 'layout/skell.scss';
+@import 'layout/align.scss';
+@import 'layout/topbar.scss';
+@import 'layout/slider-main.scss';
+//componentes
+@import 'componentes/buttons.scss';
+@import 'componentes/texts.scss';
+@import 'componentes/effects.scss';
+
 html{
     font-size: 16px;
 }
@@ -9,20 +23,34 @@ body{
     margin: 0;
     font-size: 100%;
 }
-.topbar{
-    position: fixed;
-    height: 65px;
-    width: 100%;
+
+//invocar aqui caso precise de outros loops para outras funções do layout
+@mixin call($size){
+    @include align($size);
 }
 
-.m-page-wrap{
-    position: relative;
-    top: 65px;
-}
-.main-content-wrap{
-    background: red;
-    top: 65px;
-}
-.m-menu-wrap{
-    top: 65px;
+//RWD align
+@each $size, $bk in $sizes{
+    
+    $bkp: map-get($bk, break);
+    $maxW: map-get($bk, max);
+            
+    @if $size == sm or $size == mg  {
+    
+        // MIN-WIDTH E MAX-WIDTH
+        @media(min-width: $bkp) and (max-width: $maxW) {
+
+            //invocando align responsivo
+            @include call($size);
+        }
+    }
+    @else{
+
+        // APENAS MIN-WIDTH
+        @media(min-width: $bkp){
+            
+            //invocando align responsivo
+            @include call($size);
+        }
+    }
 }
