@@ -5,15 +5,25 @@
     background-color: $pink;
     color: $white;
     border-radius: 50%;
-    $w: 1.3rem;
+    $w: 1.2rem;
     width: $w;
     height: $w;
-    position: relative;
     .count{
         position: relative;
-        top: -1px;
-        @media(min-width: $break-3){
-            top: 0;
-        }
+        top: 0;
+        font-size: 90%;
     }
+}
+.badge-tr{
+    position: absolute;
+    top: -20px;
+    right: -10px;
+}
+.btn-panel{
+    font-family: Open sans, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 90%;
+    border: 1px solid $dark;
+    padding: 0.375rem 0.625rem;
 }

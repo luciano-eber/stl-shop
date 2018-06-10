@@ -1,3 +1,18 @@
 .number{
     font-family: Open sans, sans-serif;
 }
+
+%margin-title{
+    margin-bottom: 0.625rem;
+}
+.panel-title{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 180%;
+    @extend %margin-title;
+}
+.panel-sub-title{
+    font-family: Open sans, sans-serif;
+    font-weight: 100;
+    @extend %margin-title;
+}

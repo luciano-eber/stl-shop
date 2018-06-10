@@ -11,6 +11,9 @@
 @import 'layout/topbar.scss';
 @import 'layout/slider-main.scss';
 @import 'layout/panels-main/destaques.scss';
+@import 'layout/panels-main/courtney.scss';
+@import 'layout/panels-main/marcas.scss';
+@import 'layout/panels-main/shop-the-look.scss';
 //componentes
 @import 'componentes/buttons.scss';
 @import 'componentes/texts.scss';
@@ -48,7 +51,7 @@ body{
         // MIN-WIDTH E MAX-WIDTH
         @media(min-width: $bkp) and (max-width: $maxW) {
 
-            //rwd - sizes
+            //rwd
             @include call($size);
         }
     }

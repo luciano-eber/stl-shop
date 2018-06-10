@@ -1,0 +1,10 @@
+.brands {
+  width: 100%;
+}
+.brands .swiper-slide {
+  width: 9.5rem;
+  height: 7.75rem;
+}
+.brands .navigation {
+  opacity: 1;
+}

@@ -1,0 +1,28 @@
+
+.shop-the-look{
+    width: 80%;
+
+    .swiper-slide{
+        padding-bottom: 0.5rem;
+
+        figure{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .title{
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-top: 1rem;
+        font-size: 112%;
+    }
+    .btn-panel{
+        margin: 0.8rem 0rem;
+    }
+
+    @media(min-width: $break-1){
+        width: 100%;
+    }
+}
