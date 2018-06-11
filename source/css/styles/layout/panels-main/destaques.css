@@ -1,7 +1,10 @@
+.destaques .destaque {
+  overflow: hidden;
+}
 .destaques .panel-sub-title {
   margin: 0;
 }
 
 .destaque-img {
-  max-width: 97%;
+  width: 100%;
 }

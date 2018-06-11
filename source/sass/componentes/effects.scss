@@ -1,0 +1,40 @@
+@import '../sets.scss';
+
+.destaque-a{
+    
+    overflow: hidden;
+    $margin: 1.2%;
+    width: 100% - ($margin*2);
+    max-height: 15rem;
+    margin: $margin 0%;
+
+    $transition: transform 0.6s linear;
+
+    &:hover{
+        .destaque-img{
+            transform: scale(1.1);
+            transition: $transition;
+        }
+    }
+
+    .destaque-img{
+        transform: scale(1);
+        transition: $transition;
+    }
+
+    @media(min-width: 420px){
+        max-height: none;
+    }
+    @media(min-width: $break-2){
+        max-height: 17.40525rem;
+    }
+}
+.border-hover{
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid rgba(0,0,0,0);
+
+    &:hover{
+        border: 1px solid $pink;    
+    }
+}

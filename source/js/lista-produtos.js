@@ -43,7 +43,7 @@ class ListaProdutos{
         }
 
         return `
-            <div class="swiper-slide center-center-s product flex-col-s order-${produto.order}-s">
+            <div class="swiper-slide center-center-s product flex-col-s order-${produto.order}-s border-hover">
 
                 <figure class="preview">
                     <a href="" class="preview-a center-center-s flex-col-s">
