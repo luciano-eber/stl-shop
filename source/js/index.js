@@ -4,22 +4,26 @@ $(window).load(function(){
 
 });
 
-//WINDOW - RESIZE
-$(window).resize(function(){
-
-
-});
-
 //DOM
 $(document).ready(function(){
 
-	$(loadSliders());
-	panelCourtney.resizeFont();
+	//ordem de carregamento ( EXTERNOS > INTERNOS )
+	$.when(externalAPI()).done(myAPI);
 });
 
+//API MANUAL
+function myAPI(){
 
-//carregar swipers aqui
-function loadSliders(){
+	let panelCourtney = new Courtney({
+		panel: '.courtney',
+		basis: 6,
+		startMedia: 769,
+		finalMedia: 1200
+	});
+}
+
+//API EXTERNA
+function externalAPI(){
 
 	//slider-main
 	var sliderMain = new Swiper('.slider-main', {

@@ -1,31 +1,33 @@
-//configurações
-let config = {
-    panel: '.courtney',
-    basis: 6.2
-};
-
+//factory
 class Courtney{
 
-    constructor(panel,basis){
-        this._panel = $(panel);
-        this._basis = basis;
+    constructor(config){
+
+        this.config = config;
+        this.panel = $(this.config.panel);
+
+        this.rwd($(window).width());
+
+        $(window).resize( () => {
+
+            this.rwd($(window).width());
+        });
     }
 
-    resizeFont(){
-        this.panel.css('font-size',`${this.basis}px`);
+    rwd(w){
+
+        if (w >= this.config.startMedia && w < this.config.finalMedia ){
+
+            let i = w - this.config.startMedia;
+            this.define(i);
+
+        } 
+
+    }
+    define(increment){
+        let atual = this.config.basis + (0.00855 * increment);
+        console.log(atual);
+        this.panel.css('font-size',`${atual}px`);
     }
 
-    _calcSize(){
-
-    }
-
-    get panel(){
-        return this._panel;
-    }
-
-    get basis(){
-        return this._basis;
-    }
 }
-
-let panelCourtney = new Courtney(config.panel, config.basis);
