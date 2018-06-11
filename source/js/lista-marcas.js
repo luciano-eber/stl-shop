@@ -28,7 +28,7 @@ class ListaMarcas{
 
     template(marca){
         return `
-            <div class="swiper-slide">
+            <div class="swiper-slide border-hover">
                 <a href="">
                     <img src="${marca}" class="brand-img">
                 </a>

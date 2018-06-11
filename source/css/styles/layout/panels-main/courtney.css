@@ -12,8 +12,9 @@
 }
 .courtney .banner {
   position: absolute;
+  overflow: hidden;
 }
-.courtney .banner img {
+.courtney .banner .banner-img {
   width: 100%;
   height: 100%;
 }

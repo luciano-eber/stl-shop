@@ -30,11 +30,48 @@
     }
 }
 .border-hover{
+    $transition: border 0.3s linear;
     box-sizing: border-box;
     display: flex;
     border: 1px solid rgba(0,0,0,0);
+    transition: $transition;    
 
     &:hover{
-        border: 1px solid $pink;    
+        border: 1px solid $pink;
+        transition: $transition;
     }
+}
+
+//img panel hover
+$transition: transform 0.3s linear;
+$scaleX: 1.2;
+$efeitos:(
+    hover-right:(
+        transform: translateX(25px) scaleX($scaleX)
+    ),
+            
+    hover-left:(
+        transform: translateX(-25px) scaleX($scaleX)
+    ),
+    hover-scale:(
+        transform: scaleX(1.3) scaleY(1.0555)
+    )
+);
+
+@each $efeito, $thisEfeito in $efeitos{
+
+    $transform: map-get($thisEfeito, transform);
+
+    .#{$efeito}{
+        .banner-img{
+            transform: translateX(0px) scaleX($scaleX);
+            transition: $transition;
+        }
+        &:hover{
+            .banner-img{
+                transform: $transform;
+                transition: $transition;
+            }
+        }
+    } 
 }

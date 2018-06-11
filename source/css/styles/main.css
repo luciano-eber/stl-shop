@@ -221,8 +221,9 @@ button {
 }
 .courtney .banner {
   position: absolute;
+  overflow: hidden;
 }
-.courtney .banner img {
+.courtney .banner .banner-img {
   width: 100%;
   height: 100%;
 }
@@ -268,7 +269,7 @@ button {
 }
 .brands .swiper-slide {
   width: 9.5rem;
-  height: 7.75rem;
+  height: 8.5rem;
 }
 .brands .navigation {
   opacity: 1;
@@ -494,9 +495,38 @@ button {
   box-sizing: border-box;
   display: flex;
   border: 1px solid transparent;
+  transition: border 0.3s linear;
 }
 .border-hover:hover {
   border: 1px solid #fb377f;
+  transition: border 0.3s linear;
+}
+
+.hover-right .banner-img {
+  transform: translateX(0px) scaleX(1.2);
+  transition: transform 0.3s linear;
+}
+.hover-right:hover .banner-img {
+  transform: translateX(25px) scaleX(1.2);
+  transition: transform 0.3s linear;
+}
+
+.hover-left .banner-img {
+  transform: translateX(0px) scaleX(1.2);
+  transition: transform 0.3s linear;
+}
+.hover-left:hover .banner-img {
+  transform: translateX(-25px) scaleX(1.2);
+  transition: transform 0.3s linear;
+}
+
+.hover-scale .banner-img {
+  transform: translateX(0px) scaleX(1.2);
+  transition: transform 0.3s linear;
+}
+.hover-scale:hover .banner-img {
+  transform: scaleX(1.3) scaleY(1.0555);
+  transition: transform 0.3s linear;
 }
 
 html {
