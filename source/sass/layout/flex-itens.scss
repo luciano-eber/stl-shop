@@ -16,9 +16,12 @@ $text-aligns: (
     @for $i from 1 through $z-layers{
 
         $z: 1000 - $i;
-
+        
         .z-index-#{$i}-#{$size}{
             z-index: $z;
+        }
+        .order-#{$i}-#{$size}{
+            order: $i;
         }
     }
     //hider

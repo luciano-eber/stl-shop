@@ -7,14 +7,16 @@ $(window).load(function(){
 //DOM
 $(document).ready(function(){
 
-	//ordem de carregamento ( EXTERNOS > INTERNOS )
-	$.when(externalAPI()).done(myAPI);
+	$.when(myAPI()).done(externalAPI);
+
 });
 
 //API MANUAL
 function myAPI(){
 
 	let panelCourtney = new Courtney(courtneyConfigs);
+	let produtosView = new ListaProdutos(produtosConfig);
+	let listaMarcas = new ListaMarcas(marcasConfig);
 }
 
 //API EXTERNA
@@ -36,7 +38,15 @@ function externalAPI(){
 	//marcas em destaque
 	var brands = new Swiper('.brands', {
 		slidesPerView: 6,
-		spaceBetween: 10,
+		spaceBetween: 20,
+		breakpoints:{
+			992:{
+				slidesPerView: 4
+			},
+			1200:{
+				slidesPerView: 5
+			}
+		},
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',

@@ -16,3 +16,7 @@
   font-family: Open sans, sans-serif;
   font-weight: 100;
 }
+
+.descontado {
+  text-decoration: line-through;
+}

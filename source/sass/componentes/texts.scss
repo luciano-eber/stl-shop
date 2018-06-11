@@ -16,3 +16,7 @@
     font-weight: 100;
     @extend %margin-title;
 }
+
+.descontado{
+    text-decoration: line-through;
+}

@@ -7,7 +7,8 @@ let produtos = [
         rating: 100,
         votes: 2,
         preco: 159.90,
-        parcelas: 3
+        parcelas: 3,
+        order: 4
     },
     
     {
@@ -18,14 +19,14 @@ let produtos = [
         rating: 90,
         votes: 3,
         preco: 237.00,
-        descount: 165.90,
+        desconto: 165.90,
         parcelas: 3
     },
     {
         nome: 'Calça Oversized Alfaiataria Black ',
         categoria: 'Saloon33',
-        img: 'img/produtos/calca-oversized-black.jpg.jpg',
-        imgHover: 'img/produtos/hover/calca-oversized-black.jpg.jpg',
+        img: 'img/produtos/calca-oversized-black.jpg',
+        imgHover: 'img/produtos/hover/calca-oversized-black.jpg',
         rating: 70,
         votes: 2,
         preco: 199.90,
@@ -44,8 +45,7 @@ let produtos = [
     {
         nome: 'cinto kendall fino',
         categoria: 'Higher Store',
-        img: 'img/produtos/cinto-kendall-fino.jpg.jpg',
-        imgHover: 'img/produtos/hover/cinto-kendall-fino.jpg.jpg',
+        img: 'img/produtos/cinto-kendall-fino.jpg',
         rating: 90,
         votes: 2,
         preco: 144.00,
@@ -55,7 +55,6 @@ let produtos = [
         nome: 'cinto kendall 2v largo',
         categoria: "Higher Store",
         img: 'img/produtos/cinto-kendall-largo.jpg',
-        imgHover: 'img/produtos/hover/cinto-kendall-largo.jpg',
         rating: 100,
         votes: 8,
         preco: 189.00,
@@ -69,7 +68,8 @@ let produtos = [
         rating: 0,
         votes: 0,
         preco: 169.90,
-        parcelas: 3
+        parcelas: 3,
+        order: 1
     },
     {
         nome: 'coturno high verniz preto',
@@ -79,7 +79,8 @@ let produtos = [
         rating: 0,
         votes: 0,
         preco: 199.90,
-        parcelas: 3
+        parcelas: 3,
+        order: 2
     },
     {
         nome: 'óculos cat eye 77 preto',
@@ -107,16 +108,17 @@ let produtos = [
         rating: 0,
         votes: 0,
         preco: 129.90,
-        parcelas: 2
+        parcelas: 2,
+        order: 3
     },
     {
         nome: 'Sleepdress oncinha',
         categoria: 'Saloon33',
         img: 'img/produtos/sleep-dress.jpg',
-        imgHover: 'img/produtos/hover/sleep-dress.jpg',
         rating: 90,
         votes: 3,
         preco: 237.00,
+        desconto: 65.90,
         parcelas: 3
     }
 ];

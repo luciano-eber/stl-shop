@@ -1,12 +1,16 @@
+@import '../sets';
 .product{
     
     overflow: hidden;
+    *{
+        text-align: center;
+    }
 
     .preview{
         width: 100%;
         position: relative;
         overflow: hidden;
-        // max-height: 367px;
+        height: 347px;
         margin-bottom: 1rem;
 
         &:hover{
@@ -63,19 +67,31 @@
     .nome{
         text-transform: uppercase;
         font-weight: 100;
-        font-size: 85%;
+        font-size: 95%;
         letter-spacing: 0.01555rem;
     }
+    .rating{
+        color: $pink;
+        margin-right: 0.5rem;
+    }
     .votes{
-        margin-left: 0.5rem;
         font-weight: 100;
         font-size: 78%;
         margin: 0;
     }
     .preco{
-        font-size: 90%;
-        font-weight: 400;
-        margin: 0;
+        p{
+            font-size: 85%;
+            font-weight: 400;
+        }
+        
+    }
+    .descontado{
+        font-size: 80%;
+        margin-right: 0.5rem;
+    }
+    .desconto{
+        color: red;
     }
     .parcelas{
         font-size: 80%;
@@ -84,7 +100,6 @@
     }
 }
 .preview-a{
-    position: relative;
     z-index: 888;
     &:before{
         position: absolute;

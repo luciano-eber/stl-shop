@@ -28,10 +28,7 @@ class Courtney{
 
             } else if( w >= this.config.limitMedia ){
                 
-                this.panel.css({
-                    'font-size':'10.2555px',
-                    'transition': this.transition
-                });
+                this.cssTransition(10.2555);
             }
             
         });
@@ -40,8 +37,12 @@ class Courtney{
     define(base,multiplicador){
 
         let atual = this.config.basis + (base * multiplicador);
+        this.cssTransition(atual);
+    }
+    
+    cssTransition(fontSize){
         this.panel.css({
-            'font-size':`${atual}px`,
+            'font-size': `${fontSize}px`, 
             'transition': this.transition
         });
     }
