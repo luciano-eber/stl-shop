@@ -84,7 +84,7 @@ $banners:(
     justify-content: flex-start;
     flex-flow: row wrap;
     position: relative;
-    font-size: 6.05983px;
+    font-size: 6px;
     width: 100%;
     height: 78.2em;
     overflow: hidden;
@@ -111,8 +111,5 @@ $banners:(
         }
     }
     
-    @media(min-width: $break-3){
-        font-size: 9.6765px;
-    }
 
 }

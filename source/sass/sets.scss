@@ -8,9 +8,9 @@ $topbarH: 65px;
 
 //margin lateral do container(row) responsiva
 $margin-m-start: 92%;
-$margin-m-1: 95%;
+$margin-m-1: 94%;
 $margin-m-3: 85.55%;
-$margin-m-4: 73.55%;
+$margin-m-4: 1200px;
 
 @mixin margin-main{
     width: $margin-m-start;

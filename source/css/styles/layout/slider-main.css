@@ -9,7 +9,7 @@
 }
 @media (min-width: 769px) {
   .slider-main {
-    width: 95%;
+    width: 94%;
   }
 }
 @media (min-width: 1200px) {
@@ -19,7 +19,7 @@
 }
 @media (min-width: 1600px) {
   .slider-main {
-    width: 73.55%;
+    width: 1200px;
   }
 }
 

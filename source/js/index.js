@@ -14,12 +14,7 @@ $(document).ready(function(){
 //API MANUAL
 function myAPI(){
 
-	let panelCourtney = new Courtney({
-		panel: '.courtney',
-		basis: 6,
-		startMedia: 769,
-		finalMedia: 1200
-	});
+	let panelCourtney = new Courtney(courtneyConfigs);
 }
 
 //API EXTERNA

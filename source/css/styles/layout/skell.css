@@ -13,7 +13,7 @@
 }
 @media (min-width: 769px) {
   .row {
-    width: 95%;
+    width: 94%;
   }
 }
 @media (min-width: 1200px) {
@@ -23,7 +23,7 @@
 }
 @media (min-width: 1600px) {
   .row {
-    width: 73.55%;
+    width: 1200px;
   }
 }
 
