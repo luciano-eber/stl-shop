@@ -1,0 +1,41 @@
+.mm-menu {
+  background: #fff;
+}
+
+.mm-panel_has-navbar .mm-navbar {
+  display: none;
+}
+
+.mm-panel_has-navbar {
+  padding-top: 0px;
+}
+
+@media (min-width: 769px) {
+  .mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened ~ .mm-slideout {
+    transition: none;
+    transform: none;
+  }
+}
+
+.mm-listview {
+  line-height: 30px;
+}
+
+.mm-listview .search {
+  position: relative;
+  height: 3.45rem;
+}
+.mm-listview .search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: inherit;
+  width: 100%;
+  padding-left: 4%;
+  height: 100%;
+  border: 0;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 90%;
+  letter-spacing: 0.0252rem;
+}

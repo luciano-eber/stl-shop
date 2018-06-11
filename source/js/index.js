@@ -4,6 +4,7 @@ $(window).load(function(){});
 //DOM
 $(document).ready(function(){
 
+	//api interna antes pois código depende desta ordem de leitura
 	$.when(myAPI()).done(externalAPI);
 
 });
@@ -11,6 +12,7 @@ $(document).ready(function(){
 //API MANUAL
 function myAPI(){
 
+	//configuração passada no parâmetro por padrão fica no mesmo arquivo que o objeto
 	let panelCourtney = new Courtney(courtneyConfigs);
 	let produtosView = new ListaProdutos(produtosConfig);
 	let listaMarcas = new ListaMarcas(marcasConfig);

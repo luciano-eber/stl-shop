@@ -147,6 +147,32 @@ button {
   }
 }
 
+.nav-menu-full {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.nav-menu-full .nav-item {
+  height: 100%;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.nav-menu-full .nav-item .nav-item-a {
+  height: 100%;
+  font-size: 110%;
+  position: relative;
+}
+.nav-menu-full .nav-item .nav-item-drop {
+  z-index: 1000;
+  position: absolute;
+  font-size: 98%;
+  left: 0;
+  width: 220px;
+  padding: 0px 10px 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
 .slider-main {
   width: 85%;
   width: 92%;
@@ -413,6 +439,48 @@ button {
   z-index: 886;
 }
 
+.mm-menu {
+  background: #fff;
+}
+
+.mm-panel_has-navbar .mm-navbar {
+  display: none;
+}
+
+.mm-panel_has-navbar {
+  padding-top: 0px;
+}
+
+@media (min-width: 769px) {
+  .mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened ~ .mm-slideout {
+    transition: none;
+    transform: none;
+  }
+}
+
+.mm-listview {
+  line-height: 30px;
+}
+
+.mm-listview .search {
+  position: relative;
+  height: 3.45rem;
+}
+.mm-listview .search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: inherit;
+  width: 100%;
+  padding-left: 4%;
+  height: 100%;
+  border: 0;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 90%;
+  letter-spacing: 0.0252rem;
+}
+
 .badge {
   font-size: 60%;
   font-weight: bold;
@@ -535,7 +603,7 @@ html {
 
 body {
   font-family: Oswald, helvetica, arial, sans-serif;
-  color: #000;
+  color: rgba(0, 0, 0, 0.889);
   background: #fff;
   padding: 0;
   margin: 0;

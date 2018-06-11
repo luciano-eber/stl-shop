@@ -1,18 +1,24 @@
 $(document).ready(function() {
 
-    $("#my-menu").mmenu({}, {
+    let $myMenu = $('#my-menu');
 
+    $myMenu.mmenu({
+        slidingSubmenus: false,
+    }, {
+        
         offCanvas: {
            pageSelector: "#my-page"
-        }
+        },
+        
      });
 
-    var API = $("#my-menu").data( "mmenu" );
-    let myPanel = $('#my-panel');
+
+    var API = $myMenu.data( "mmenu" );
+
 
     $("#my-button").click(function() {
 
-        $(triggerToggle($(this), API, myPanel));
+        $(triggerToggle($(this), API, $myMenu));
      });
     
 });

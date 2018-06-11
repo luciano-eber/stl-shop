@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Steal the Look | Shop</title>
-		<link href="https://fonts.googleapis.com/css?family=Oswald:100,300,400,600" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,600" rel="stylesheet">
 	<!-- build:css css/index.min.css -->
 	<link href="css/fonts/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="css/fonts/buyshop.css" rel="stylesheet" type="text/css">
@@ -17,13 +17,18 @@
 
 	<!-- menu principal -->
 	<nav class="m-menu-wrap" id="my-menu">
-		<ul id="my-panel">
-			<li><a href="/">Home</a></li>
-			<li><a >About us</a>
-				<ul class="vertical mm-listview">
-					<li><a href="/about/history/">History</a></li>
-					<li><a href="/about/team/">The team</a></li>
-					<li><a href="/about/address/">Our address</a></li>
+		<ul>
+			<li class="search">
+				<span>
+					<form>
+						<input type="text" placeholder="Procurar por...">
+					</form>
+				</span>
+			</li>
+			<li><a class="no-drop" href="/">Entrar</a></li>
+			<li><span class="drop">New In</span>
+				<ul class="vertical">
+					<li><a>Ver Tudo</a></li>
 				</ul>
 			</li>
 			<li><a href="/contact/">Contact</a></li>
@@ -47,6 +52,22 @@
 				<img class="logo-mobile" src="img/logo-mobile.png">
 				<img class="logo-full" src="img/logo-stl-shop.png">
 			</div>
+
+
+			<!-- nav menu full width layout -->
+			<ul class="nav-menu-full hider-s show-m center-start-m">
+				<li class="nav-item">
+					<a class="nav-item-a center-center-s" href="">
+						New In
+					</a>
+					<ul class="nav-item-drop">
+						<li class="nav-item-drop-item">
+							<a href="">Ver Tudo</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
 		
 			<!-- user -->
 			<ul class="user-menu center-around-s">

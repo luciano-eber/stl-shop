@@ -16,6 +16,7 @@
 @import 'layout/panels-main/marcas.scss';
 @import 'layout/panels-main/shop-the-look.scss';
 @import 'layout/products.scss';
+@import 'layout/menu-lateral.scss';
 //componentes
 @import 'componentes/buttons.scss';
 @import 'componentes/texts.scss';
@@ -27,13 +28,12 @@ html{
 
 body{
     font-family: Oswald, helvetica, arial, sans-serif;
-    color: #000;
+    color: rgba(0,0,0,0.889);
     background: #fff;
     padding: 0;
     margin: 0;
     font-size: 100%;
 }
-
 //lógica de classes flexbox reaproveitáveis e responsivas utilizadas no html:
 
 //invocar aqui mixins que são importados de seus respectivos módulos
