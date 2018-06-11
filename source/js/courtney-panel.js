@@ -21,7 +21,6 @@ class Courtney{
 
         $.map( bks , (bk) => {
 
-            console.log(w);
             if( w >= bk.min && w < bk.max && w < (this.config.limitMedia - 1) ){
                 
                 let i = w - this.config.startMedia;
@@ -39,8 +38,8 @@ class Courtney{
 
     }
     define(base,multiplicador){
+
         let atual = this.config.basis + (base * multiplicador);
-        console.log(atual);
         this.panel.css({
             'font-size':`${atual}px`,
             'transition': this.transition

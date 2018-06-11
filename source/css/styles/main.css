@@ -42,7 +42,7 @@ button {
 }
 @media (min-width: 1600px) {
   .row {
-    width: 1200px;
+    width: 1100px;
   }
 }
 
@@ -167,7 +167,7 @@ button {
 }
 @media (min-width: 1600px) {
   .slider-main {
-    width: 1200px;
+    width: 1100px;
   }
 }
 
@@ -197,6 +197,10 @@ button {
 
 .destaque-img {
   max-width: 97%;
+}
+
+.best-sellers {
+  width: 100%;
 }
 
 .courtney {
@@ -288,6 +292,96 @@ button {
   .shop-the-look {
     width: 100%;
   }
+}
+
+.product {
+  overflow: hidden;
+}
+.product .preview {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.product .preview:hover .preview-a:before {
+  opacity: 0.5;
+  transition: opacity 0.4s linear;
+}
+.product .preview:hover .preview-capt {
+  opacity: 1;
+  transition: opacity 0.4s linear;
+}
+.product .preview .preview-img {
+  width: 100%;
+}
+.product .preview .preview-capt {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.product .preview .preview-capt .preview-img-hover {
+  width: 100%;
+  height: 100%;
+}
+.product .preview .preview-capt .text {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 120%;
+  font-weight: 200;
+  color: #fff;
+  z-index: 899;
+}
+.product .infos {
+  margin: 0.4rem 0 0.2rem 0;
+}
+.product .infos .categoria, .product .infos .nome, .product .infos .parcelas {
+  margin: 0.2rem 0rem;
+}
+.product .categoria {
+  font-family: Open sans,sans-serif;
+  font-weight: bold;
+  font-size: 90%;
+}
+.product .nome {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 85%;
+  letter-spacing: 0.01555rem;
+}
+.product .votes {
+  margin-left: 0.5rem;
+  font-weight: 100;
+  font-size: 78%;
+  margin: 0;
+}
+.product .preco {
+  font-size: 90%;
+  font-weight: 400;
+  margin: 0;
+}
+.product .parcelas {
+  font-size: 80%;
+  opacity: 0.5;
+  font-family: Open sans, sans-serif;
+}
+
+.preview-a {
+  position: relative;
+  z-index: 888;
+}
+.preview-a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: #000;
+  z-index: 886;
 }
 
 .badge {

@@ -44,6 +44,18 @@ function externalAPI(){
 		loop: true,
 	});
 	
+	//best-sellers
+	var shopTheLook = new Swiper('.best-sellers', {
+		slidesPerView: 4,
+		spaceBetween: 15,
+		breakpoints: {
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 30
+			},
+		},
+		loop: true,
+	});
 	//shop-the-look
 	var shopTheLook = new Swiper('.shop-the-look', {
 		slidesPerView: 3,
