@@ -1,8 +1,5 @@
 //WINDOW
-$(window).load(function(){
-
-
-});
+$(window).load(function(){});
 
 //DOM
 $(document).ready(function(){

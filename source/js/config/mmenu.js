@@ -8,26 +8,27 @@ $(document).ready(function() {
      });
 
     var API = $("#my-menu").data( "mmenu" );
+    let myPanel = $('#my-panel');
 
     $("#my-button").click(function() {
 
-        $(triggerToggle( $(this), API.open, API.close ) );
+        $(triggerToggle($(this), API, myPanel));
      });
     
 });
 
-function triggerToggle(trigger,open,close){
+function triggerToggle(trigger,api,panel){
 
     let status = trigger.attr('status');
 
     if( status == 'close' ){
 
-        open();
+        api.openPanel(panel);
         trigger.attr('status','open');
 
     } else {
 
-        close();
+        api.close(panel);
         trigger.attr('status','close');
     }
 }
