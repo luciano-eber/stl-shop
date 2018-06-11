@@ -5,19 +5,18 @@
     background-color: $pink;
     color: $white;
     border-radius: 50%;
-    $w: 1.2rem;
+    $w: 18px;
     width: $w;
     height: $w;
     .count{
         position: relative;
-        top: 0;
         font-size: 90%;
     }
 }
 .badge-tr{
     position: absolute;
-    top: -20px;
-    right: -10px;
+    top: -14px;
+    right: -14px;
 }
 .btn-panel{
     font-family: Open sans, sans-serif;

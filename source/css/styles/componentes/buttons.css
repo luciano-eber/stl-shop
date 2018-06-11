@@ -4,19 +4,18 @@
   background-color: #fb377f;
   color: #fff;
   border-radius: 50%;
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 18px;
+  height: 18px;
 }
 .badge .count {
   position: relative;
-  top: 0;
   font-size: 90%;
 }
 
 .badge-tr {
   position: absolute;
-  top: -20px;
-  right: -10px;
+  top: -14px;
+  right: -14px;
 }
 
 .btn-panel {
