@@ -112,20 +112,23 @@
         padding: 0px 5px;
         text-transform: uppercase;
         font-weight: 100;
-        
         &:hover{
             .nav-item-drop{
                 opacity: 1;
                 transition: opacity 0.3s linear;
+                display: block;
             }
         }
-        $base: 100%;
+
+        $base: 90%;
         .nav-item-a{
             font-size: $base;
             position: relative;
             font-weight: 200;
+            
         }
         .nav-item-drop{
+            display: none;
             z-index: 1000;
             position: absolute;
             font-size: $base - 20;
@@ -143,6 +146,16 @@
     }
     @media(min-width: $break-3){
         width: 57%;
+        .nav-item{
+
+            $base: 118%;
+            .nav-item-a{
+                font-size: $base;
+            }
+            .nav-item-drop{
+                font-size: $base - 20;
+            }
+        } 
     }
     @media(min-width: $break-4){
         .nav-item{
