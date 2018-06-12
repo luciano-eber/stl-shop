@@ -119,15 +119,16 @@
                 transition: opacity 0.3s linear;
             }
         }
+        $base: 100%;
         .nav-item-a{
-            font-size: 120%;
+            font-size: $base;
             position: relative;
             font-weight: 200;
         }
         .nav-item-drop{
             z-index: 1000;
             position: absolute;
-            font-size: 100%;
+            font-size: $base - 20;
             opacity: 0;
             transition: opacity 0.2s linear;
             left: 0;

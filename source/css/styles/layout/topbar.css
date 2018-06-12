@@ -93,14 +93,14 @@
   transition: opacity 0.3s linear;
 }
 .nav-menu-full .nav-item .nav-item-a {
-  font-size: 120%;
+  font-size: 100%;
   position: relative;
   font-weight: 200;
 }
 .nav-menu-full .nav-item .nav-item-drop {
   z-index: 1000;
   position: absolute;
-  font-size: 100%;
+  font-size: 80%;
   opacity: 0;
   transition: opacity 0.2s linear;
   left: 0;

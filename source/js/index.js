@@ -16,7 +16,7 @@ function myAPI(){
 	let panelCourtney = new Courtney(courtneyConfigs);
 	let produtosView = new ListaProdutos(produtosConfig);
 	let listaMarcas = new ListaMarcas(marcasConfig);
-	let menuContent = new MenuContent(configMenuContent);
+	// let menuContent = new MenuContent(configMenuContent);
 }
 
 //API EXTERNA
