@@ -30,12 +30,12 @@ gulp.task('clean', function() {
 
 gulp.task('build-img', function() {
 
-  return gulp.src('source/design/**/*')
+  return gulp.src('source/img/**/*')
     // .pipe(imagemin()) //imagino que a as imagens que estou replicando já sejam otimizadas então comentei o imagemin...
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('sass', ['clean-css-styles'], function(){
+gulp.task('sass', function(){
     return gulp.src('source/sass/**/*')
     .pipe(sass())
     .pipe(gulp.dest('source/css/styles'));
@@ -51,6 +51,8 @@ gulp.task('usemin', function() {
       .pipe(usemin({
         libs: [uglify()],
         js: [babel({presets: ['env']}),uglify()],
+        libs: [autoprefixer, cssmin],
+        fonts: [autoprefixer, cssmin],
         css: [autoprefixer, cssmin]
       }))
       .pipe(gulp.dest('dist'));
