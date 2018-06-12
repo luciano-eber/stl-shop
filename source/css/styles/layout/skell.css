@@ -2,6 +2,11 @@
   display: flex;
 }
 
+.flex-wrap {
+  display: inline-flex;
+  flex-flow: row wrap;
+}
+
 .section {
   width: 100%;
 }
