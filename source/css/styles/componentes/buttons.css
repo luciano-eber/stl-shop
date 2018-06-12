@@ -5,18 +5,15 @@
   color: #fff;
   border-radius: 50%;
   width: 18px;
-  height: 18px;
-}
-.badge .count {
-  position: relative;
-  font-size: 90%;
-}
+  height: 18px; }
+  .badge .count {
+    position: relative;
+    font-size: 90%; }
 
 .badge-tr {
   position: absolute;
   top: -14px;
-  right: -14px;
-}
+  right: -14px; }
 
 .btn-panel {
   font-family: Open sans, sans-serif;
@@ -24,9 +21,7 @@
   font-weight: bold;
   font-size: 90%;
   border: 1px solid #000;
-  padding: 0.375rem 0.625rem;
-}
-.btn-panel:hover {
-  color: #fb377f;
-  transition: color 0.2s linear;
-}
+  padding: 0.375rem 0.625rem; }
+  .btn-panel:hover {
+    color: #fb377f;
+    transition: color 0.2s linear; }
