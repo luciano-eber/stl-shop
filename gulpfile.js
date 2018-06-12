@@ -51,9 +51,9 @@ gulp.task('usemin', function() {
       .pipe(usemin({
         libs: [uglify()],
         js: [babel({presets: ['env']}),uglify()],
-        libs: [autoprefixer, cssmin],
-        fonts: [autoprefixer, cssmin],
-        css: [autoprefixer, cssmin]
+        fonts: [autoprefixer(), cssmin()],
+        cssLibs: [autoprefixer(), cssmin()],
+        css: [autoprefixer(), cssmin()]
       }))
       .pipe(gulp.dest('dist'));
   });
