@@ -1,23 +1,5 @@
 @import '../sets.scss';
-.mm-menu{
-    background: $white;
-}
 
-.mm-panel_has-navbar .mm-navbar{
-    display: none;
-}
-.mm-panel_has-navbar {
-    padding-top: 0px;
-}
-.mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened~.mm-slideout{
-    @media(min-width: $break-1){
-        transition: none;
-        transform: none;
-    }
-}
-.mm-listview {
-    line-height: 30px;
-}
 .mm-listview {
     
     .search{
@@ -55,3 +37,30 @@
         
     }
 }   
+
+//resets no mmenu
+.mm-menu{
+    background: $white;
+}
+
+.mm-panel_has-navbar .mm-navbar{
+    display: none;
+}
+.mm-panel_has-navbar {
+    padding-top: 0px;
+}
+.mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened~.mm-slideout{
+    @media(min-width: $break-1){
+        transition: none;
+        transform: none;
+    }
+}
+.mm-listview {
+    line-height: 30px;
+}
+.mm-menu .mm-listview .mm-btn_next:after {
+    border-color: rgba(0,0,0,0.8);
+}
+.mm-listitem_opened{
+    background: rgba(255,255,255,0.4);
+}

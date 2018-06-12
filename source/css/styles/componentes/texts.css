@@ -12,6 +12,10 @@
   font-size: 180%;
 }
 
+.panel-title-small {
+  text-transform: initial;
+}
+
 .panel-sub-title {
   font-family: Open sans, sans-serif;
   font-weight: 100;
