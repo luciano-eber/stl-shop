@@ -13,12 +13,20 @@ class MenuContent{
 
     print(){
 
-        console.log(this.wrappers);
+        //percorrendo diferentes tipos de menu(wrap)
+        $.map(this.wrappers, (wrap) => {
+            //listando
+            this.listItens(wrap);
+        });
+        
+    }
+    
+    listItens(wrap){
+        
         $.map(this.options, (option) => {
             console.log(option);
         });
     }
-
     template(option){
         return `
             <li class="nav-item">
