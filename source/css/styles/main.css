@@ -171,8 +171,8 @@ button {
 }
 .nav-menu-full .nav-item:hover .nav-item-drop {
   opacity: 1;
-  transition: opacity 0.3s linear;
-  display: block;
+  visibility: visible;
+  transition: opacity 0.2s linear, visibility 0.3s linear;
 }
 .nav-menu-full .nav-item .nav-item-a {
   font-size: 90%;
@@ -180,12 +180,12 @@ button {
   font-weight: 200;
 }
 .nav-menu-full .nav-item .nav-item-drop {
-  display: none;
+  visibility: hidden;
   z-index: 1000;
   position: absolute;
-  font-size: 70%;
+  font-size: 80%;
   opacity: 0;
-  transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear, visibility 0.3s linear;
   left: 0;
   width: 200px;
   font-weight: 100;
@@ -195,6 +195,12 @@ button {
 @media (min-width: 992px) {
   .nav-menu-full {
     width: 55%;
+  }
+  .nav-menu-full .nav-item .nav-item-a {
+    font-size: 105%;
+  }
+  .nav-menu-full .nav-item .nav-item-drop {
+    font-size: 85%;
   }
 }
 @media (min-width: 1200px) {
@@ -520,6 +526,19 @@ button {
   font-weight: 100;
   font-size: 90%;
   letter-spacing: 0.0252rem;
+}
+.mm-listview .login {
+  text-transform: initial;
+  font-weight: 300;
+}
+.mm-listview .menu-item-nome {
+  font-size: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+}
+.mm-listview .no-drop .menu-item-nome {
+  font-weight: 300;
 }
 
 .badge {
