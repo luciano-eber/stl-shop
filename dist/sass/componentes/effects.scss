@@ -1,0 +1,77 @@
+@import '../sets.scss';
+
+.destaque-a{
+    
+    overflow: hidden;
+    $margin: 1.2%;
+    width: 100% - ($margin*2);
+    max-height: 15rem;
+    margin: $margin 0%;
+
+    $transition: transform 0.6s linear;
+
+    &:hover{
+        .destaque-img{
+            transform: scale(1.1);
+            transition: $transition;
+        }
+    }
+
+    .destaque-img{
+        transform: scale(1);
+        transition: $transition;
+    }
+
+    @media(min-width: 420px){
+        max-height: none;
+    }
+    @media(min-width: $break-2){
+        max-height: 17.40525rem;
+    }
+}
+.border-hover{
+    $transition: border 0.3s linear;
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid rgba(0,0,0,0);
+    transition: $transition;    
+
+    &:hover{
+        border: 1px solid $pink;
+        transition: $transition;
+    }
+}
+
+//img panel hover
+$transition: transform 0.3s linear;
+$scaleX: 1.2;
+$efeitos:(
+    hover-right:(
+        transform: translateX(25px) scaleX($scaleX)
+    ),
+            
+    hover-left:(
+        transform: translateX(-25px) scaleX($scaleX)
+    ),
+    hover-scale:(
+        transform: scaleX(1.3) scaleY(1.0555)
+    )
+);
+
+@each $efeito, $thisEfeito in $efeitos{
+
+    $transform: map-get($thisEfeito, transform);
+
+    .#{$efeito}{
+        .banner-img{
+            transform: translateX(0px) scaleX($scaleX);
+            transition: $transition;
+        }
+        &:hover{
+            .banner-img{
+                transform: $transform;
+                transition: $transition;
+            }
+        }
+    } 
+}

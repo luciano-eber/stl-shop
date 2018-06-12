@@ -1,0 +1,26 @@
+@import '../sets';
+
+.slider-main{
+    //slide principal full width apenas mobile
+    @media(max-width: $break-1){
+        width: 100%;
+    }
+    width: 85%;
+    @include margin-main;
+}
+.swiper-slide{
+    background: $white;
+    width: 100%;
+}
+
+.slider-main-img{
+    width: 100%;
+    @media(min-width: $break-1){
+        min-height: 18.125rem;
+        width: 95%;
+    }
+    @media(min-width: $break-2){
+        width: 100%;
+    }
+    
+}

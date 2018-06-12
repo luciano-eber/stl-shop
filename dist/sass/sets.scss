@@ -1,0 +1,61 @@
+//colors
+$pink: #fb377f;
+$dark: #000;
+$white: #fff;
+
+//topbar altura
+$topbarH: 65px;
+
+//margin lateral do container(row) responsiva
+$margin-m-start: 92%;
+$margin-m-1: 94%;
+$margin-m-3: 85.55%;
+$margin-m-4: 1170px;
+
+@mixin margin-main{
+    width: $margin-m-start;
+
+    @media(min-width: $break-1){
+        width: $margin-m-1;
+    }
+    @media(min-width: $break-3){
+        width: $margin-m-3;
+    }
+    @media(min-width: $break-4){
+        width: $margin-m-4;
+    }
+}
+
+//breakpoints do layout
+$startMedia: 280px;
+$break-1: 769px;
+$break-2: 992px;
+$break-3: 1200px;
+$break-4: 1600px;
+
+//tamanhos (breakpoints principais) map structure para gerar o nome das classes reaproveitáveis
+$sizes:(
+    s:(
+        break: $startMedia
+    ),
+    sm: (
+        break: $startMedia,
+        max: ($break-1 - 1),
+    ),
+    m:(
+        break: $break-1
+    ),
+    mg: (
+        break: $break-1,
+        max: ($break-2 - 1),
+    ),
+    g: (
+        break: $break-2,
+    ),
+    gg: (
+        break: $break-3,
+    ),
+    eg: (
+        break: $break-4,
+    )
+);

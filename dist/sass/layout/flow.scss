@@ -1,0 +1,11 @@
+@mixin flow($size){
+    .flex-col-#{$size}{
+        flex-flow: column nowrap;
+    }
+    .flex-row-#{$size}{
+        flex-flow: row nowrap;
+    }
+    .flex-row-wrap-#{$size}{
+        flex-flow: row wrap;
+    }
+}

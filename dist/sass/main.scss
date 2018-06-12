@@ -1,0 +1,70 @@
+
+//configs
+@import 'reset.scss';
+@import 'sets.scss';
+//layout
+@import 'layout/skell.scss';
+@import 'layout/align.scss';
+@import 'layout/flow.scss';
+@import 'layout/flex-itens.scss';
+//blocos da estrutura
+@import 'layout/topbar.scss';
+@import 'layout/slider-main.scss';
+@import 'layout/panels-main/destaques.scss';
+@import 'layout/panels-main/best-sellers.scss';
+@import 'layout/panels-main/courtney.scss';
+@import 'layout/panels-main/marcas.scss';
+@import 'layout/panels-main/shop-the-look.scss';
+@import 'layout/products.scss';
+@import 'layout/menu-lateral.scss';
+//componentes
+@import 'componentes/buttons.scss';
+@import 'componentes/texts.scss';
+@import 'componentes/effects.scss';
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: Oswald, helvetica, arial, sans-serif;
+    color: rgba(0,0,0,0.989);
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+//lógica de classes flexbox reaproveitáveis e responsivas utilizadas no html:
+
+//invocar aqui mixins que são importados de seus respectivos módulos
+@mixin call($size){ //chamada única
+    @include align($size);
+    @include flow($size);
+    @include flexItem($size);
+}
+
+//RWD schema
+@each $size, $bk in $sizes{
+    
+    $bkp: map-get($bk, break);
+    $maxW: map-get($bk, max);
+            
+    @if $size == sm or $size == mg  {
+    
+        // MIN-WIDTH E MAX-WIDTH
+        @media(min-width: $bkp) and (max-width: $maxW) {
+
+            //rwd
+            @include call($size);
+        }
+    }
+    @else{
+
+        // APENAS MIN-WIDTH
+        @media(min-width: $bkp){
+            
+            //rwd
+            @include call($size);
+        }
+    }
+}

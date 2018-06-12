@@ -1,0 +1,28 @@
+@import '../sets.scss';
+.badge{
+    font-size: 60%;
+    font-weight: bold;
+    background-color: $pink;
+    color: $white;
+    border-radius: 50%;
+    $w: 18px;
+    width: $w;
+    height: $w;
+    .count{
+        position: relative;
+        font-size: 90%;
+    }
+}
+.badge-tr{
+    position: absolute;
+    top: -14px;
+    right: -14px;
+}
+.btn-panel{
+    font-family: Open sans, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 90%;
+    border: 1px solid $dark;
+    padding: 0.375rem 0.625rem;
+}
